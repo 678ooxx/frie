@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.luke.ceshi.MainActivity">
+
+
+    <com.example.luke.ceshi.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.luke.ceshi.TitleLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/coloryellow"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/buttongoback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Close"
+            android:textSize="7dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:gravity="center_vertical"
+            android:text="待定"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/weixin_img"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/weixin_picture_selector" />
+
+            <TextView
+                android:id="@+id/weixin_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/weixin"
+                android:textColor="@drawable/weixin_text_select"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/favor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/favor_img"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/weixin_picture_selector" />
+
+            <TextView
+                android:id="@+id/favor_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/favor"
+                android:textColor="@drawable/weixin_text_select"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/find"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/find_img"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/weixin_picture_selector" />
+
+            <TextView
+                android:id="@+id/find_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/massage"
+                android:textColor="@drawable/weixin_text_select"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/self"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/self_img"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:background="@drawable/weixin_picture_selector" />
+
+            <TextView
+                android:id="@+id/self_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/mine"
+                android:textColor="@drawable/weixin_text_select"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

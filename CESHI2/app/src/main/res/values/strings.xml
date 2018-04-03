@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CESHI</string>
+    <string name="project_name">我的设计</string>
+    <string name="weixin">主页</string>
+    <string name="massage">消息</string>
+    <string name="favor">收藏</string>
+    <string name="mine">我</string>
+    <string name="sousuo">搜索</string>
+    <string name="yonghu">用户:</string>
+    <string name="mima">密码:</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+</resources>
